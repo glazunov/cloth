@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21433cc86581446db8e1553a191bca81, type: 3}
+  m_Name: GameSettingsInstaller
+  m_EditorClassIdentifier: 
+  meshSettings:
+    planeWidth: 10
+  lineSettings:
+    minAngle: -35
+    maxAngle: 35
+    minLength: 0.459
+    maxLength: 1.5
+    minimalPlaneHeight: 13.24
+  distanceSettings:
+    distanceBetweenPieces: 1.97
+  meshCutSettings:
+    planePiecePrefab: {fileID: 2715466316963722336, guid: f53c589f6b18743ee858e9e985a985ae,
+      type: 3}
+    playerModel: {fileID: 6003750262121009818, guid: 0f5799acabeff4753bd7cf0720a3e486,
+      type: 3}
+  movementSettings:
+    tripTime: 15
