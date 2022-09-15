@@ -18,6 +18,13 @@ namespace PlaneCut
 			Container.Bind<IMeshCreatable>().To<MeshCreator>().AsSingle().NonLazy();
 			Container.Bind<GameController>().AsSingle().NonLazy();
 
+			Container.Bind<IGameStateMachine>().To<GameStateMachine>().AsSingle();
+
+			Container.Bind<GameStateMovingThroughCut>().AsSingle();
+			Container.Bind<GameStateEndMoving>().AsSingle();
+
+
+
 			Container.BindFactory<PieceSide, Mesh, PlanePiece, PlanePiece.Factory>()
 				.FromComponentInNewPrefab(_settings.planePiecePrefab)
 				.WithGameObjectName("PlanePiece")

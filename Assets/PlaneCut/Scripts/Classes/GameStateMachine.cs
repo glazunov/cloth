@@ -4,15 +4,12 @@ using UnityEngine;
 
 namespace PlaneCut
 {
-	public class StateMachine
+	public class GameStateMachine : IGameStateMachine
 	{
 		IGameState currentState;
 
 		public void ChangeState(IGameState newState)
 		{
-			if (currentState != null)
-				currentState.Exit();
-
 			currentState = newState;
 			currentState.Enter();
 		}
