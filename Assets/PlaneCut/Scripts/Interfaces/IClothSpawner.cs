@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IMeshCreatable 
+namespace PlaneCut
 {
-    Dictionary<PieceSide, Mesh> Meshes { get; }
+	public class IClothSpawner
+	{
+		List<Cloth> Clothes { get; }
+	}
 }
-
-
